@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DBT_PRACTICE
+    schema: RAW
+    tables:
+      - name: raw_orders
+      - name: raw_customers
