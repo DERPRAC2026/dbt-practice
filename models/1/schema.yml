@@ -1,20 +1,16 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
+    - name: stg_orders
+      description: "All orders details"
       columns:
-          - name: id
+          - name: order_id
             description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+           
 
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
+    - name: fct_orders
+      description: "All details including customers"
       columns:
           - name: id
             description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+            
